@@ -1,2 +1,2 @@
 # git-labs
-git lab for training purpose
+Several git labs for training purpose
