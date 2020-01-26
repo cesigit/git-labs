@@ -6,14 +6,14 @@
    git config --global user.email dockerlite@gmail.com
 ```
 
-## Pour vous aider, definir des aliases suivants
-``` :
+## Pour vous aider, mttre les aliases suivants
+```shell script
     git config --global alias.br branch
     git config --global alias.ci commit
     git config --global alias.st status
     git config --global alias.last 'log -1 HEAD'
 ```
-### aliases plus complexes a copier/coller dans le fichier .gitconfig
+### aliases plus complexes a copier/coller dans le fichier ~/.gitconfig
 ```shell script
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen--> %cr%Creset by %Cblue%cN <%cE>%Creset' --abbre
     v-commit --date=relative
@@ -24,7 +24,7 @@
      git config --local alias.dumpvalues "! f() { echo 'copying config' \$1; git config --list --\$1 > \$2; }; f"
 ```
 
-# Utiliser un editeur par defaut 
+# Utiliser un editeur de texte par defaut 
 ```shell script
    git config --global -e
    git config --global core.editor vim 
@@ -43,7 +43,7 @@
   vi ~/.gitconfig                
 ```
 et 
-ajouter a la fin de ce fichier .gitconfig le code suivant:
+ajouter a la fin de ce fichier ~/.gitconfig le code suivant:
 ```shell script
 [diff]
    tool = p4merge
