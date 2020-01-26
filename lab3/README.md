@@ -38,5 +38,9 @@ Où se trouve la version répertoriée comme Modifications non transférées pou
  Faites un diff entre la version entre la staging area .  
 ````$ git dif````
 
+Continuez et verifier l'etat
+$ git commit –m "my comment"
+$ git status
 
-
+**Questions**:  
+Quelle version avez-vous validée: celle de la zone de transfert ou celle du répertoire de travail?
