@@ -6,7 +6,7 @@
    git config --global user.email dockerlite@gmail.com
 ```
 
-## Pour vous aider, mttre les aliases suivants
+## Pour vous aider, mettre les aliases suivants
 ```shell script
     git config --global alias.br branch
     git config --global alias.ci commit

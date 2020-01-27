@@ -36,6 +36,7 @@ Remarquez la sortie que vous obtenez. Il y a le nom de la branche - la branche p
 ```
 ```shell script
 $ git commit –am "comment string"
+$ git log
 ```
 
 ```shell script

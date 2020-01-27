@@ -27,7 +27,7 @@ Que signifie Changes to be committed ?
 
 4- Editez le meme fichier et verifier son etat.
 ```shell script
-$ echo change > file3.c
+$ echo change >> file3.c
 $ git status
 ````
 **Questions:**
@@ -52,8 +52,24 @@ $ git status
 ````
 8- Modifiez le fichier dans le répertoire de travail une fois de plus et effectuez une vérification d'état.
 ```shell script
-$ echo "change 2"> file3.c
+$ echo "change 2">> file3.c
 $ git status
 ```
 À ce stade, vous avez une version du même fichier dans le référentiel local (celui que vous avez validé à l'étape 6), une version dans la zone de transfert 
-(celle que vous avez transférée à l'étape 7) et une version dans le travail
+(celle que vous avez transférée à l'étape 7) et une version dans la zone de travail, etape 8.
+
+Committez en utilisant un raccourci.  
+```shell script
+$ git commit –am "committing another change"
+```
+**Question:**  
+Quelle version a été validée (celle de la working area ou celle de la staged area )?
+
+Étant donné que vous avez utilisé le raccourci **-am**, la version du répertoire de travail a été transférée (par rapport à la version précédente dans la zone de transfert), puis cette version a été validée dans le référentiel local.
+Vérifiez l'état une fois de plus.
+```shell script
+$ git status
+```
+Remarquez la sortie. Vous êtes de retour dans un répertoire de travail propre: Git possède les dernières versions de tout ce que vous avez mis à jour.
+
+
